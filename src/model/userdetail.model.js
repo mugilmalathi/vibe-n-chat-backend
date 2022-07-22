@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const userDetailSchema = new mongoose.Schema({
     id:{type: Number},
-    firstName: {type: String, required:true},
+    firstName: {type: String},
     lastName: {type: String},
     profilepic:{type: String},
-    DOB:{type: String, required:true},
-    Bio:{type: String, requird:true},
+    DOB:{type: String},
+    Bio:{type: String},
     website: {type: String},
     hobby:{type: String}
 },{
