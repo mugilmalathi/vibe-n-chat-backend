@@ -13,8 +13,10 @@ const connect = require("./config/db");
 const PORT = process.env.PORT;
 
 const userdetailcontroller = require("./controller/userdetail.controller");
+const postcomment = require("./controller/comment.controller");
 
 app.use("/", userdetailcontroller);
+app.use("/" , postcomment);
 
 app.listen(PORT, async()=>{
 
