@@ -14,7 +14,7 @@ app.post('/upload', (req, res) => {
 
     const file = req.files.file;
 
-    file.mv(`${__dirname}/client/public/uploads/${file.name}`, err => {
+    file.mv(`C:/Users/mugil/Downloads/Projects/Vibe n Chat/Vibe-n-Chat/public/uploads/${file.name}`, err => {
         if(err) {
             console.log(err);
             return res.status(500).send(err);
