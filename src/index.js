@@ -36,9 +36,11 @@ const PORT = process.env.PORT;
 
 const userdetailcontroller = require("./controller/userdetail.controller");
 const postcomment = require("./controller/comment.controller");
+const searchController = require("./controller/search.controller");
 
 app.use("/", userdetailcontroller);
 app.use("/" , postcomment);
+app.use("/", searchController);
 
 app.listen(PORT, async()=>{
 
